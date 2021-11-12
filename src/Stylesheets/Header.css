@@ -1,0 +1,76 @@
+/* The header bar (makes up socials and navigation) at the top */
+#header {
+    position: absolute;
+    min-height: 120px;
+    min-width: 100vw;
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* SOCIAL MEDIA LINKS: Includes email, phone number. This is the top half of the header */
+
+#socials {
+    position: absolute;
+    width: 64vw;
+    border-bottom: white 1px solid;
+}
+
+#phoneNumberHeader{
+    margin-right: 0px;
+}
+  
+#emailHeader {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#socialIconList {
+    list-style-type: none;
+}
+
+.socialsText {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    float: left;
+}
+
+.socialsIcon {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    float: right;
+}
+
+.socialsIconListItem {
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 2px;
+    font-size: 14px;
+    float: right;
+}
+
+/* NAVIGATION BAR */
+
+#navBar {
+    position: absolute;
+    margin-top: 40px;
+    width: 64vw;
+}
+
+#nameHeader {
+    margin: 6px;
+    float: left;
+    font-weight: bold;
+}
+
+#navList {
+    margin-top: 12px;
+    list-style-type: none;
+}
+
+.navListItem {
+    float: left;
+    padding-left: 10px;
+    padding-right: 2px;
+}
