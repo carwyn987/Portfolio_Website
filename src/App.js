@@ -1,6 +1,10 @@
 import './Stylesheets/App.css';
+import Homepage from './Components/Homepage.js'
 import HeaderBar from './Components/HeaderBar'
+
 import { useEffect } from 'react'
+import { React } from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
 
@@ -9,9 +13,14 @@ function App() {
   }, []);
 
   return (
-    <div className="App App-header">
+    <BrowserRouter>
+      <div className="App App-header">
       <HeaderBar></HeaderBar>
-    </div>
+        <Routes>
+          <Route path="/" element={<Homepage/>} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
