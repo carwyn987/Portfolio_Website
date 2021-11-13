@@ -1,9 +1,9 @@
 /* The header bar (makes up socials and navigation) at the top */
-#header {
+#header{
     position: fixed;
     min-height: 120px;
     min-width: 100vw;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.8);
 }
 
 /* SOCIAL MEDIA LINKS: Includes email, phone number. This is the top half of the header */

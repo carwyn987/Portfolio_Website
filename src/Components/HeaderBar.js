@@ -4,7 +4,6 @@ import fbIcon from '../Images/Icons/fb.png';
 import linkedInIcon from '../Images/Icons/linkedin.png';
 import gitIcon from '../Images/Icons/git.png';
 
-
 class HeaderBar extends React.Component{
     render() {
         return (
