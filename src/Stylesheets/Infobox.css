@@ -1,0 +1,27 @@
+.infobox {
+    width: 320px;
+    height: 150px;
+    border-radius: 10px;
+    border: lightgray 1px solid;
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    transition: color 1s;
+    float: left;
+}
+
+.infobox:hover {
+    border: black 1px solid;
+    background-color: black;
+    color: #d1a221;
+}
+
+.infobox-title {
+    margin: 15px;
+    font-size: 20px;
+}
+
+.infobox-desc {
+    font-size: 15px;
+    color: gray;
+}

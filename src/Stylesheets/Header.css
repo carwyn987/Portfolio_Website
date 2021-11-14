@@ -4,6 +4,7 @@
     min-height: 120px;
     min-width: 100vw;
     background-color: rgba(0,0,0,0.8);
+    z-index: 100;
 }
 
 /* SOCIAL MEDIA LINKS: Includes email, phone number. This is the top half of the header */
