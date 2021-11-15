@@ -1,8 +1,13 @@
 import React from 'react';
-import backgroundPic from '../Images/Nelson2.jpg';
 import '../Stylesheets/Homepage.css';
 import Button from '@mui/material/Button';
 import InfoBox from './InfoBox'
+
+// Image imports
+import backgroundPic from '../Images/Nelson2.jpg';
+import recentwork1 from '../Images/electricSkateboard.jpg';
+import recentwork2 from '../Images/fusion.jpg';
+import recentwork3 from '../Images/linearPendulum.jpg';
 
 class Homepage extends React.Component{
     render() {
@@ -15,7 +20,7 @@ class Homepage extends React.Component{
                     <Button href="#starterPage" id="getStarted" variant="outlined">Get Started!</Button>
                 </div>
                 <div id="Skillset">
-                    <a id="starterPage"></a>
+                    <a href="/" id="starterPage"> </a>
 
                     {/* MAIN SKILL SET SECTION */}
                     <h3 className="sectionHeader">Main Skill Set</h3>
@@ -27,9 +32,18 @@ class Homepage extends React.Component{
                     </div>
 
                     {/* RECENT WORKS SECTION */}
-                    <h3 className="sectionHeader">My Recent Works May Impress You</h3>
+                    <h3 className="sectionHeader">Check out my recent works</h3>
                     <p className="sectionHeaderSubtext">Click on any of the images to view a more detailed project description</p>
-
+                    <div className="recentWorks">
+                        <div className="upperHalf">
+                            <div className="pic1 picDivsFormat"><img className="recentwork-img" alt="img" src={recentwork1}></img></div>
+                            <div className="pic2 picDivsFormat"><img className="recentwork-img" alt="img" src={recentwork2}></img></div>
+                        </div>
+                        <div className="bottomHalf">
+                            <div className="pic3 picDivsFormat"><img className="recentwork-img" alt="img" src={recentwork2}></img></div>
+                            <div className="pic4 picDivsFormat"><img className="recentwork-img" alt="img" src={recentwork3}></img></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
