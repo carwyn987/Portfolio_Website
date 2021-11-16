@@ -21,9 +21,9 @@ class HeaderBar extends React.Component{
                     <p id="nameHeader">Carwyn Collinsworth</p>
                     <ul id="navList" className="socialsIcon">
                         <li className="navListItem"><a className="navListItem" href="/">Home</a></li>
-                        <li className="navListItem"><a className="navListItem" href="/Resume">Resume</a></li>
-                        <li className="navListItem"><a className="navListItem" href="/Projects">Projects</a></li>
-                        <li className="navListItem"><a className="navListItem" href="/Notes">University Assignments and Notes</a></li>
+                        <li className="navListItem"><a className="navListItem" href="/resume">Resume</a></li>
+                        <li className="navListItem"><a className="navListItem" href="/projects">Projects</a></li>
+                        <li className="navListItem"><a className="navListItem" href="/notes">University Assignments and Notes</a></li>
                         {/* <li className="navListItem"><a className="navListItem" href="/Contact">Contact</a></li> */}
                     </ul>
                 </div>
