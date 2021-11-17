@@ -4,6 +4,7 @@ import HeaderBar from './Components/HeaderBar.js';
 import Resume from './Components/Resume.js';
 import Project from './Components/Project.js';
 import Projects from './Components/Projects.js';
+import InformationSlide from './Components/InformationSlide.js';
 
 
 import { useEffect, React } from 'react'
@@ -23,9 +24,11 @@ function App() {
           <Route path="/" element={<Homepage/>} />
           <Route path="/resume" element={<Resume/>}/>
           <Route path="/projects" element={<Projects/>}/>
+          <Route path="/notes" element={<InformationSlide/>}/>
           <Route path="/linear_pendulum" element={<Project dir="linear_pendulum"/>}/>
           <Route path="/electric_longboard" element={<Project dir="electric_longboard"/>}/>
           <Route path="/fusion_research" element={<Project dir="fusion_research"/>}/>
+          <Route path="/drone" element={<Project dir="drone"/>}/>
         </Routes>
       </div>
     </BrowserRouter>

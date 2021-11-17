@@ -5,6 +5,7 @@ import Resume from './Resume';
 import Project from './Project';
 import BodyElement from './BodyElement';
 import Projects from './Projects';
+import InformationSlide from './InformationSlide';
 
 export {
     HeaderBar,
@@ -14,4 +15,5 @@ export {
     Project,
     BodyElement,
     Projects,
+    InformationSlide,
 }

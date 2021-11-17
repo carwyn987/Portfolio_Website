@@ -1,0 +1,13 @@
+{
+    "title": "Drone Collision Avoidance",
+    "desc": "To fulfill the Senior Honors Research Project I & II required for graduation with a B.S. Honors in Computer Science, I have embarked on a project involving drone collision avoidance. Beginning in 2D, the final goal is to have a physical drone dodging incoming projectiles. This will journey from in-browser reinforcement learning to Unreal Engine simulation, and finally to hardware, computer vision, and environment sensing and interpolation.",
+    "org": "Stony Brook University - CSE495, 496",
+    "website": "playwith.tech/?ptid=30 - My advisor's website.",
+    "completed": "08/23/21 - In Progress",
+    "text": [
+        "",
+        "",
+        ":Image Acknowledgements:",
+        "'Quadrocopter: Power distribution' by Lenz Grimmer is licensed under CC BY-NC-SA 2.0 "
+    ]
+}

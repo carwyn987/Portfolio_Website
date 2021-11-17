@@ -6,6 +6,7 @@ import backgroundPic from '../Images/Nelson2.jpg';
 import recentwork1 from '../Images/electricSkateboard.jpg';
 import recentwork2 from '../Images/fusion.jpg';
 import recentwork3 from '../Images/linearPendulum.jpg';
+import recentwork4 from '../Images/drone.jpg';
 
 
 class Projects extends React.Component{
@@ -85,9 +86,9 @@ class Projects extends React.Component{
                             </Link>
                         </div>
                         <div className="bottomHalf">
-                            <Link to="/something">
-                                <div className="pic3 picDivsFormat" onMouseOver={this.handleMouseOverProj3} onMouseLeave={this.handleMouseLeaveProj3}><img id="pic3Img" className="recentwork-img" alt="img" src={recentwork2}></img>
-                                    <p id="recentProjectText3" className={this.state.proj3Text}>Something Else</p>
+                            <Link to="/drone">
+                                <div className="pic3 picDivsFormat" onMouseOver={this.handleMouseOverProj3} onMouseLeave={this.handleMouseLeaveProj3}><img id="pic3Img" className="recentwork-img" alt="img" src={recentwork4}></img>
+                                    <p id="recentProjectText3" className={this.state.proj3Text}>Drone Collision Avoidance</p>
                                 </div>
                             </Link>
                             <Link to="/linear_pendulum">
