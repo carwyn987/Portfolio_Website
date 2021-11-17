@@ -1,16 +1,14 @@
 import React from 'react';
+import '../Stylesheets/App.css';
 import { Link } from "react-router-dom"; 
-import '../Stylesheets/Homepage.css';
-import Button from '@mui/material/Button';
-import InfoBox from './InfoBox'
 
-// Image imports
 import backgroundPic from '../Images/Nelson2.jpg';
 import recentwork1 from '../Images/electricSkateboard.jpg';
 import recentwork2 from '../Images/fusion.jpg';
 import recentwork3 from '../Images/linearPendulum.jpg';
 
-class Homepage extends React.Component{
+
+class Projects extends React.Component{
     state = {proj1Text: "gone",
             proj2Text: "gone",
             proj3Text: "gone",
@@ -66,27 +64,12 @@ class Homepage extends React.Component{
     render() {
         return (
             <div>
-                {/* WELCOME PAGE / SPLASH SCREEN SECTION */}
-                <div className="background-wrapper">
-                    <img id="backgroundpic" src={backgroundPic} alt="papi"></img>
-                    <h1 id="nameTitlePage">Carwyn Rhys Collinsworth</h1>
-                    <p id="introText">Welcome! I am a Junior-year undergraduate student at Stony Brook University, persuing a BS in Computer Science and a Masters in a specialized subdivision such as data science or artificial intelligence. This website contains a variety of information about me, and details multiple projects I have completed. Enjoy! </p>
-                    <Button href="#starterPage" id="getStarted" variant="outlined">Get Started!</Button>
+                <div className="partHeaderBackground">
+                    <img className="backgroundpicProjHeader" src={backgroundPic} alt="papi"></img>
+                    <h1 className="Project_Details">Projects</h1>
                 </div>
-                <div id="Skillset">
-                    <a href="/" id="starterPage"> </a>
-
-                    {/* MAIN SKILL SET SECTION */}
-                    <h3 className="sectionHeader">Main Skill Set</h3>
-                    <p className="sectionHeaderSubtext">Also known as fields which I excel and am adequately competent</p>
-                    <div id="skillInfoboxes">
-                        <InfoBox title="Computer Programming" description="A multitude of projects prompted learning and implementation of C++, Java, Matlab, Python, and Web Development (HTML, CSS, Javascript, React Framework, NodeJS, Express, etc)."/>
-                        <InfoBox title="Mathematics" description="Have excelled in mathematics courses including Calculus BC, Calculus III, Discrete Mathematics, Linear Algebra, Differential Equations, Statistics, Finite Mathematical Structures, etc."/>
-                        <InfoBox title="Engineering/Hardware" description="Various projects such as a bluetooth controlled electric skateboard and an inverted linear pendulum have refined my hands on engineering and design skill set."/>
-                    </div>
-
-                    {/* RECENT WORKS SECTION */}
-                    <h3 className="sectionHeader">Check out my recent works</h3>
+                {/* RECENT WORKS SECTION */}
+                <h3 className="sectionHeader">Check out my recent works</h3>
                     <p className="sectionHeaderSubtext">Click on any of the images to view a more detailed project description</p>
                     <div className="recentWorks">
                         <div className="upperHalf">
@@ -114,10 +97,9 @@ class Homepage extends React.Component{
                             </Link>
                         </div>
                     </div>
-                </div>
             </div>
-        )
+        );
     }
 }
 
-export default Homepage;
+export default Projects

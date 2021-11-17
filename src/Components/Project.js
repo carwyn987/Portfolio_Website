@@ -8,6 +8,8 @@ class Project extends React.Component{
     constructor(props){
         super(props);
         this.dir = props.dir;
+        // Reset window scroll to 0
+        window.scrollTo(0, 0);
     }
 
     render() {

@@ -4,6 +4,7 @@ import InfoBox from './InfoBox';
 import Resume from './Resume';
 import Project from './Project';
 import BodyElement from './BodyElement';
+import Projects from './Projects';
 
 export {
     HeaderBar,
@@ -11,5 +12,6 @@ export {
     InfoBox,
     Resume,
     Project,
-    BodyElement
+    BodyElement,
+    Projects,
 }

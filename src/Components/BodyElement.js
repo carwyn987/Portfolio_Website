@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Stylesheets/BodyElement.css';
+import parse from 'html-react-parser';
 
 class Project extends React.Component{
     
@@ -11,9 +12,8 @@ class Project extends React.Component{
                     <img className="bodyImage" src={process.env.PUBLIC_URL + "/ProjectImages/" + this.props.dir + "/" + this.props.data + ".jpg"} alt="informational_image"></img>
                 )
             case "<if":
-                console.log(this.props.data)
                 return (
-                    this.props.data
+                    parse(this.props.data)
                 )
             default:
                 if(this.props.data.substr(0,1) === ":"){

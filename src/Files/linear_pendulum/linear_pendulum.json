@@ -11,7 +11,7 @@
         "img2",
         "Initially, I chose to use a servo due to my familiarity in using one, however this option failed. It turns out the servo I used (which was very large) just didn’t have enough torque to move the cart in changing directions fast. Additionally, the design used a drawer slider lubed with teflon lubricant, which had too much mass to be controlled by the servo. To counteract this massive (pun intended) problem, linear slides were ordered to allow smooth movement of the cart.",
         "The servo approach is shown below. You will hear banging which exemplifies the issue with the usage of a servo and drawer slide. Don't worry, I have gotten a haircut or two since this video :)",
-        "<iframe width='560' height='315' src='https://www.youtube.com/embed/u3U6o5ji5Uo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
+        "<iframe width='900' height='515' src='https://www.youtube.com/embed/u3U6o5ji5Uo' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
         "Due to this failure, I decided to use a stepper motor due to its advantages shown above, and because my unfamiliarity with this technology (I had only seen it on 3D printers before this) would allow me to learn in the process.",
         "The next step was to choose the input method. There were two obvious choices. Firstly, using a camera attached to the raspberry pi (the computer used to control the system) would allow for a unique inverted pendulum design, using image recognition to calculate the position of the rod at any time. This option was scrapped after finding that there was too much latency between capturing images and the program acquiring them due to the absence of a GPU. Therefore, I chose the second option of using an encoder acting as the rods axle, allowing almost instantaneous and completely accurate readings of the angular position of the rod. Additionally, limit switches were used to make sure the stepper motor couldn’t pull the linear sliding cart off the end of the linear slides.",
         "Initially, I programmed the linear pendulum on the raspberry pi. The raspberry pi connected to the encoder and the limit switches. Both of these input devices were programmed to have interrupts, so that no pulses or end position notifications were missed. However, there was an issue with this process. The raspberry pi still had too much latency because of the operating system. To fix this, I switched to an arduino.",
@@ -31,9 +31,9 @@
         "The code is summed up in a sequence diagram shown below",
         "img10",
         ":Results:",
-        "https://www.youtube.com/watch?v=dlMxPfKm4ik",
+        "<iframe width='900' height='515' src='https://www.youtube.com/embed/dlMxPfKm4ik' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>",
         "Unfortunately, the rod didn’t balance infinitely, however the issue has been found to be the lack of a PID controller, and the usage of a threshold movement range. This problem is being fixed currently, and updates will soon be posted.",
         "Just one other interesting view of this, a view from a scope. This following video is the pulse width modulation (PWM) returned by the encoder as it swings in harmonic motion due to gravity.",
-        "https://www.youtube.com/watch?v=r63wpYRR7X0"
+        "<iframe width='900' height='515' src='https://www.youtube.com/embed/r63wpYRR7X0' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
     ]
 }

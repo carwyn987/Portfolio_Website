@@ -23,7 +23,7 @@ class HeaderBar extends React.Component{
                         <li className="navListItem"><a className="navListItem" href="/">Home</a></li>
                         <li className="navListItem"><a className="navListItem" href="/resume">Resume</a></li>
                         <li className="navListItem"><a className="navListItem" href="/projects">Projects</a></li>
-                        <li className="navListItem"><a className="navListItem" href="/notes">University Assignments and Notes</a></li>
+                        <li className="navListItem"><a className="navListItem" href="/notes">University Assignments and Publications</a></li>
                         {/* <li className="navListItem"><a className="navListItem" href="/Contact">Contact</a></li> */}
                     </ul>
                 </div>

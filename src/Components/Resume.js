@@ -7,7 +7,8 @@ class Resume extends React.Component{
     render() {
         return (
             <div>
-                <embed id="resume" src={ResumeDoc} type="application/pdf"/>
+                {/* PDF, with zoom set to 100% */}
+                <embed id="resume" src={ResumeDoc + "#zoom=100"} type="application/pdf"/>
             </div>
         )
     }
