@@ -20,9 +20,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage/>} />
           <Route path="/resume" element={<Resume/>}/>
-          <Route path="/linear_pendulum" element={<Project/>}/>
-          <Route path="/electric_longboard" element={<Project/>}/>
-          <Route path="/fusion_research" element={<Project/>}/>
+          <Route path="/linear_pendulum" element={<Project dir="linear_pendulum"/>}/>
+          <Route path="/electric_longboard" element={<Project dir="electric_longboard"/>}/>
+          <Route path="/fusion_research" element={<Project dir="fusion_research"/>}/>
         </Routes>
       </div>
     </BrowserRouter>

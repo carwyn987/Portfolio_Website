@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@600&family=Source+Sans+Pro:wght@300&display=swap');
+
+.projectHeader {
+    height: 600px;
+}
+
+/* The cut image at the top of every project page */
+.backgroundpicProjHeader {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.partHeaderBackground {
+    max-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Project Details Text */
+.Project_Details {
+    position: absolute;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.projectHeader {
+    
+}
+
+/* image tag formatting */
+.thumbnailPic {
+    float: left;
+    border-radius: 15px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 50px;
+    width: 550px;
+    height: 550px;
+}
+
+/* Title of project details */
+.titleProjDetails {
+    float: left;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    font-family: 'Archivo Narrow', sans-serif;
+    color: black;
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+/* Description */
+.descriptionProjDetails {
+    float: left;
+    font-size: 20px;
+    width: 100%;
+    max-height: 60%;
+    text-align: left;
+    color: black;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+/* Box to encapsulate all data to the right of thumbnail */
+.projDescBox {
+    margin-top: 20px;
+    width: 600px;
+    height: 500px;
+    float: left;
+    position: absolute;
+    left: 50%;
+}
+
+/* Formatting for links */
+.link {
+    color: blue;
+}
+
+/* Body text, images, videos of body. This section is generated from json file */
+.projectBody {
+
+}
